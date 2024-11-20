@@ -7,13 +7,14 @@ import {
   useLocation,
 } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import NewsInfo from "./components/NewsInfo";
+import EventsPage from "./components/EventsPage";
 import Footer from "./components/Footer";
-import Team from "./components/Team";
+import TeamPage from "./components/TeamPage";
 import JoinUs from "./components/JoinUs";
-import Contact from "./components/Contact";
+import Contact from "./components/ContactPage";
 import Publication from "./components/Publication";
 import "./App.css";
+import ContactPage from "./components/ContactPage";
 
 function Navbar() {
   const location = useLocation();
@@ -22,7 +23,7 @@ function Navbar() {
   return (
     <nav
       className={
-        isHomepage? "navbar homepage-navbar" : "navbar non-home-navbar"
+        isHomepage ? "navbar homepage-navbar" : "navbar non-home-navbar"
       }
     >
       {!isHomepage && (
@@ -32,6 +33,16 @@ function Navbar() {
             <h1>HCI & Pervasive Technologies Laboratory</h1>
             <h2 className="university">University of Ghana</h2>
           </div>
+        </div>
+      )}
+      {isHomepage && (
+        <div className="logo-container">
+          <img
+            src="/hci.png"
+            alt="HCI Lab Logo"
+            className="navbar-logo"
+          />
+          <p className="lab-name">HCI & Pervasive Technologies Lab</p>
         </div>
       )}
       <ul className="navbar-links">
@@ -48,12 +59,13 @@ function Navbar() {
           <Link to="/publications">Publications</Link>
         </li>
         <li>
-          <Link to="/news-info">News</Link>
+          <Link to="/events-info"> Events</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+     
     </nav>
   );
 }
@@ -66,11 +78,11 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/team" element={<Team />} />
+            <Route path="/team" element={<TeamPage />} />
             <Route path="/join-us" element={<JoinUs />} />
             <Route path="/publication" element={<Publication />} />
-            <Route path="/news-info" element={<NewsInfo />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/events-info" element={<EventsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
         <Footer />

@@ -12,9 +12,15 @@ body {
   height: 100%;
 }
 
-.lab-name{
-  font-weight: bold;
+.logo-container .navbar-logo{
+  width: 150px;
 }
+
+.lab-name{
+  font-weight: 200;
+  font-size: 30px;
+}
+
 .page {
   display: flex;
   flex-direction: column;
