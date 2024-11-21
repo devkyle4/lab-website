@@ -1,7 +1,7 @@
 const researchFocus = [
   {
     image: "/pervasive.png",
-    title: "Pervasive Technologies",
+    title: "Persuasive Technologies",
     description:
       "Exploring technologies seamlessly integrated into everyday environments to enhance human-computer interaction.",
   },

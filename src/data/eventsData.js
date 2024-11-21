@@ -1,6 +1,7 @@
 const newsData = [
   {
-    title: "ASR Hackathon 2024",
+    id:1,
+    title: "Tɛkyerɛma Pa Hackathon 2024",
     date: "December 15-16, 2024",
     venue: "HCI Lab, University of Ghana",
     description:
@@ -18,6 +19,14 @@ const newsData = [
       { position: "1st Runner-Up", prize: "$1000 + Certificate" },
       { position: "2nd Runner-Up", prize: "$500 + Certificate" },
     ],
+  },
+  {
+    id:2,
+    title: "Learning Through Collections",
+    date: "Saturday, Nov 3",
+    time: "9:30 AM - 12:00 PM",
+    description:
+      "Discover how thinking strategies can empower students to succeed in new learning environments.",
   },
 ];
 

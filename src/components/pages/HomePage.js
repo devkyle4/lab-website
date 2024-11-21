@@ -1,7 +1,7 @@
 import React from "react";
-import researchFocus from "../data/researchFocus";
-import ResearchCard from "./ResearchCard";
-import './styles/HomePage.css'
+import researchFocus from "../../data/researchFocus";
+import ResearchCard from "../ResearchCard";
+import '../styles/HomePage.css'
 
 function HomePage() {
   return (

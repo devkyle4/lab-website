@@ -6,15 +6,14 @@ import {
   Link,
   useLocation,
 } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import EventsPage from "./components/EventsPage";
+import HomePage from "./components/pages/HomePage";
+import EventsPage from "./components/pages/EventsPage";
 import Footer from "./components/Footer";
-import TeamPage from "./components/TeamPage";
-import JoinUs from "./components/JoinUs";
-import Contact from "./components/ContactPage";
-import Publication from "./components/Publication";
+import TeamPage from "./components/pages/TeamPage";
+import JoinUs from "./components/pages/JoinUs";
+import ContactPage from "./components/pages/ContactPage";
+import Publication from "./components/pages/Publication";
 import "./App.css";
-import ContactPage from "./components/ContactPage";
 
 function Navbar() {
   const location = useLocation();
@@ -30,19 +29,15 @@ function Navbar() {
         <div className="navbar-branding">
           <img src="/hci.png" alt="Lab Logo" className="navbar-logo" />
           <div className="navbar-text">
-            <h1>HCI & Pervasive Technologies Laboratory</h1>
+            <h1>HCI & Persuasive Technologies Laboratory</h1>
             <h2 className="university">University of Ghana</h2>
           </div>
         </div>
       )}
       {isHomepage && (
         <div className="logo-container">
-          <img
-            src="/hci.png"
-            alt="HCI Lab Logo"
-            className="navbar-logo"
-          />
-          <p className="lab-name">HCI & Pervasive Technologies Lab</p>
+          <img src="/hci.png" alt="HCI Lab Logo" className="navbar-logo" />
+          <p className="lab-name">HCI & Persuasive Technologies Lab</p>
         </div>
       )}
       <ul className="navbar-links">
@@ -65,7 +60,6 @@ function Navbar() {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-     
     </nav>
   );
 }

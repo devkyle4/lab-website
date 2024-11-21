@@ -11,6 +11,9 @@ body {
   flex-direction: column;
   height: 100%;
 }
+.logo-container{
+  z-index: 1000;
+}
 
 .logo-container .navbar-logo{
   width: 150px;
@@ -104,6 +107,7 @@ nav.homepage-navbar {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
 }
 
 .homepage-navbar h1 {
@@ -124,8 +128,31 @@ nav.homepage-navbar {
   font-size: 1.1rem;
 }
 
+.homepage-navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.homepage-navbar h1,
+.homepage-navbar ul {
+  position: relative;
+  z-index: 2;
+}
+
+.homepage-navbar h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
 h2 {
-  color: #007bff;
+  color: #021427;
 }
 
 .lab-image {

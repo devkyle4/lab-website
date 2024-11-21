@@ -7,23 +7,24 @@
 
 .contact-header h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #021427;
     margin-bottom: 20px;
 }
 
 .contact-header p,
 .contact-header address {
     font-size: 1rem;
-    color: #555;
+    color: #030303;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 address {
     font-style: normal;
     line-height: 1.5;
+    font-weight: 800;
 }
 
-/* Contact Buttons */
 .contact-buttons {
     display: flex;
     justify-content: center;
@@ -38,22 +39,21 @@ address {
     padding: 10px 20px;
     font-size: 1rem;
     color: white;
-    background-color: #007bff;
+    background-color: #021427;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-    background-color: #0056b3;
+    background-color: #021427;
 }
 
 .contact-button i {
     font-size: 1.2rem;
 }
 
-/* Contact Images Section */
-.contact-images {
+.contact-image {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -62,6 +62,7 @@ address {
 
 .contact-image-card {
     text-align: center;
+
 }
 
 .contact-image {
@@ -69,10 +70,14 @@ address {
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-self: center;
 }
 
 .contact-image-caption {
     margin-top: 10px;
     font-size: 1rem;
     color: #555;
+    text-align: center;
 }
+

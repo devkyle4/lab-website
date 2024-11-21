@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/ContactPage.css";
+import "../styles/ContactPage.css";
 
 function ContactPage() {
   return (
@@ -7,23 +7,22 @@ function ContactPage() {
       <div className="contact-header">
         <h2>Contact</h2>
         <p>
-          Our facilities are located at the Skempton Building, in the South
-          Kensington campus of Imperial College London.
+          Our facilities are located at the Department of Computer Science Building, in the main campus of University of ghana.
         </p>
         <p>Our full address is:</p>
         <address>
-          Skempton Building
+          Dept of Computer Science Building
           <br />
-          Imperial College London
+          University of Ghana
           <br />
-          SW7 2BU, London
+          Room CS6, Accra
         </address>
         <div className="contact-buttons">
           <a
-            href="mailto:p.angeloudis@imperial.ac.uk"
+            href="mailto:hcidcsug@gmail.com"
             className="contact-button email-button"
           >
-            <i className="fas fa-envelope"></i> p.angeloudis@imperial.ac.uk
+            <i className="fas fa-envelope"></i> iwiafe@ug.edu.gh
           </a>
           <a
             href="https://goo.gl/maps/imperial"
@@ -35,22 +34,14 @@ function ContactPage() {
           </a>
         </div>
       </div>
-      <div className="contact-images">
+      <div className="contact-image">
         <div className="contact-image-card">
           <img
-            src="/images/skempton-building.jpg"
-            alt="Skempton Building"
+            src="/Dept.jpg"
+            alt="University of Ghana, Main Campus"
             className="contact-image"
           />
-          <p className="contact-image-caption">Skempton Building</p>
-        </div>
-        <div className="contact-image-card">
-          <img
-            src="/images/south-kensington.jpg"
-            alt="South Kensington Campus"
-            className="contact-image"
-          />
-          <p className="contact-image-caption">South Kensington Campus</p>
+          <p className="contact-image-caption">University of Ghana Campus</p>
         </div>
       </div>
     </div>
