@@ -41,9 +41,10 @@ function JoinUsPage() {
         <h2>Want to Know More?</h2>
         <p>
           If you are interested in joining us or learning more, feel free to{" "}
-          <Link to="/contact" className="contact-link">
+          <a href="mailto:iwiafe@ug.edu.gh" className="contact-link">
+            {" "}
             contact Prof. Wiafe
-          </Link>
+          </a>
           .
         </p>
       </section>
