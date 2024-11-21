@@ -13,6 +13,8 @@ import TeamPage from "./components/pages/TeamPage";
 import JoinUs from "./components/pages/JoinUs";
 import ContactPage from "./components/pages/ContactPage";
 import Publication from "./components/pages/Publication";
+import EventDetailPage from "./components/pages/EventDetailPage";
+import eventsData from "./data/eventsData";
 import "./App.css";
 
 function Navbar() {
@@ -64,6 +66,7 @@ function Navbar() {
   );
 }
 
+
 function App() {
   return (
     <Router>
@@ -77,6 +80,10 @@ function App() {
             <Route path="/publication" element={<Publication />} />
             <Route path="/events-info" element={<EventsPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route
+              path="/events/:eventId"
+              element={<EventDetailPage eventsData={eventsData} />}
+            />
           </Routes>
         </main>
         <Footer />

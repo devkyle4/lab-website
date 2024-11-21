@@ -10,7 +10,7 @@ function EventCard({ event }) {
         <p className="event-date">
           <i className="far fa-calendar-alt"></i> {event.date} | {event.time}
         </p>
-        <p className="event-description">{event.description}</p>
+        <p className="event-description">{event.overview}</p>
       </div>
     </Link>
   );

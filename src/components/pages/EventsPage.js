@@ -27,7 +27,7 @@ function EventsPage() {
         </div>
 
         <div className="calendar">
-          <h3>October 2024</h3>
+          <h3>January 2025</h3>
           <div className="calendar-grid">
             {Array.from({ length: 31 }, (_, i) => (
               <div
