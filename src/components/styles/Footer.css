@@ -15,6 +15,9 @@
     font-family: Arial, sans-serif;
     flex-shrink: 0;
 }
+.footer-content p{
+text-align: center;
+}
 
 .footer-content {
     max-width: 1200px;

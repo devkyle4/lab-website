@@ -50,9 +50,6 @@ function Navbar() {
           <Link to="/team">Team</Link>
         </li>
         <li>
-          <Link to="/join-us">Join Us</Link>
-        </li>
-        <li>
           <Link to="/publications">Publications</Link>
         </li>
         <li>
@@ -60,6 +57,9 @@ function Navbar() {
         </li>
         <li>
           <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/join-us">Join Us</Link>
         </li>
       </ul>
     </nav>

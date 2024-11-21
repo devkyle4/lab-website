@@ -1,4 +1,6 @@
 import React from "react";
+import { FaGithub, FaInstagram } from "react-icons/fa";
+import {FaSquareXTwitter} from "react-icons/fa6";
 import "./styles/Footer.css";
 
 function Footer() {
@@ -7,29 +9,37 @@ function Footer() {
       <div className="footer-content">
         <div className="social-icons">
           <a
-            href="mailto:example@example.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fas fa-envelope"></i>
-          </a>
-          <a
-            href="https://google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-google"></i>
-          </a>
-          <a
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="social-icon"
           >
-            <i className="fab fa-github"></i>
+            <FaGithub />
+          </a>
+          <a
+            href="https://x.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <FaSquareXTwitter />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <FaInstagram />
           </a>
         </div>
-        <p>© 2024 Human Computer Interactions & Pervasive Technologies Laboratory</p>
-        <p className="footer-logo">HCI Lab</p>
+        <div className="footer-content">
+          <p>
+            © 2024 Human Computer Interactions & Pervasive Technologies
+            Laboratory
+          </p>
+          <p className="footer-logo">HCI Lab</p>
+        </div>
       </div>
     </footer>
   );
